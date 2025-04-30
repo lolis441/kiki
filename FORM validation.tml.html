@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="jay.js"></script>
+<body>
+    <form method="post" name="form1" onsubmit="return form()"><center>
+    Name:
+    <input type="text" name="name" placeholder="Enter your name">
+    <br>
+    <br>
+    Email:
+    <input type="email" name="email" placeholder="Enter your email">
+    <br>
+    <br>
+    Password:
+    <input type="password" id="password" placeholder="Enter your password">
+    <br>
+    <br>
+    confirm:
+    <input type="password" id="confirm" placeholder="Confirm your password">
+    <br>
+    <br>
+    Date:
+    <input type="date" name="dob" placeholder="Enter your date of birth">
+    <br>
+    <br>
+    phone:
+    <input type="text" name="phone" placeholder="Enter your phone number">
+    <br>
+    <br>
+    Address:
+    <input type="text" name="address" placeholder="Enter your address">
+    <br>
+    <br>
+    age:
+    <input type="text" name="age" placeholder="Enter your age">
+    <br>
+    <br>
+    <button type="submit" class="qui">send</button>
+    <script>
+        function form(){
+        if(document.form1.name.value==""){
+            alert("please fill the name");
+            document.form1.name.focus();
+            return false;
+        }
+        else if(document.form1.email.value==""){
+    alert("please fill the email");
+    document.form1.awe.focus();
+    return false;
+}
+else if(document.form1.password.value==""){
+    alert("please fill the password");
+    document.form1.awe.focus();
+    return false;
+}
+else if(document.form1.dob.value==""){
+    alert("please fill the date");
+    document.form1.awe.focus();
+    return false;
+}
+else if(document.form1.phone.value==""){
+    alert("please fill the number");
+    document.form1.awe.focus();
+    return false;
+}
+else if(document.form1.address.value==""){
+    alert("please fill the address");
+    document.form1.awe.focus();
+    return false;
+}
+else if(document.form1.age.value==""){
+    alert("please fill the age");
+    document.form1.awe.focus();
+    return false;
+}
+const password=document.getElementById("password");
+const confirm=document.getElementById("confirm");
+if(password.value!=confirm.value){
+    alert("use the same password");
+    }
+    else{
+        alert("form submitted successfully");
+    return true;
+    }
+}
+        </script>
+</body>
+</html>

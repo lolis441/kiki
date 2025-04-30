@@ -1,0 +1,22 @@
+*
+body {
+    background-color: ghostwhite;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+.qui {
+    background-color:wheat;
+    color:grey;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 10%;
+}
+.qui:hover {
+    background-color: rgb(0, 111, 139);
+    color: white;
+}
+.qui:active {
+    background-color: lightblue;
+    color: black;
+}
